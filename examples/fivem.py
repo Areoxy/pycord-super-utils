@@ -1,9 +1,9 @@
-import discordSuperUtils
+import pycordSuperUtils
 import asyncio
 
 
 async def fivem_test():
-    fivem_server = await discordSuperUtils.FiveMServer.fetch(
+    fivem_server = await pycordSuperUtils.FiveMServer.fetch(
         ...
     )  # Replace ... by the IP (port is needed!)
     # e.g. localhost:30120

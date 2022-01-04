@@ -1,15 +1,15 @@
 import discord
 from discord.ext import commands
 
-import discordSuperUtils
+import pycordSuperUtils
 
 bot = commands.Bot(command_prefix="-", intents=discord.Intents.all())
-EconomyManager = discordSuperUtils.EconomyManager(bot)
+EconomyManager = pycordSuperUtils.EconomyManager(bot)
 
 
 @bot.event
 async def on_ready():
-    database = discordSuperUtils.DatabaseManager.connect(...)
+    database = pycordSuperUtils.DatabaseManager.connect(...)
     await EconomyManager.connect_to_database(database, ["economy"])
 
     print("Economy manager is ready.", bot.user)
@@ -37,9 +37,9 @@ async def leaderboard(ctx):
         f"Member: {x.member}, Network: {await x.net()}" for x in guild_leaderboard
     ]
 
-    await discordSuperUtils.PageManager(
+    await pycordSuperUtils.PageManager(
         ctx,
-        discordSuperUtils.generate_embeds(
+        pycordSuperUtils.generate_embeds(
             formatted_leaderboard,
             title="Economy Leaderboard",
             fields=25,
