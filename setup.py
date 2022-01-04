@@ -4,27 +4,27 @@ f = open("README.md", "r")
 README = f.read()
 
 setup(
-    name="discordSuperUtils",
-    packages=["discordSuperUtils"],
+    name="pycordSuperUtils",
+    packages=["pycordSuperUtils"],
     package_data={
-        "discordSuperUtils.assets": ["*"],
+        "pycordSuperUtils.assets": ["*"],
         "": ["*.png", "*.ttf"],
-        "discordSuperUtils.music": ["*"],
-        "discordSuperUtils.music.lavalink": ["*"],
+        "pycordSuperUtils.music": ["*"],
+        "pycordSuperUtils.music.lavalink": ["*"],
     },
     include_package_data=True,
     version="0.3.0",
     license="MIT",
-    description="Discord Bot Development made easy!",
+    description="A fork of discordSuperUtils to easily develop discord Bots with pycord",
     long_description=README,
     long_description_content_type="text/markdown",
-    author="koyashie07 and adam7100",
+    author="koyashie07, adam7100 and Areo",
     url="https://github.com/discordsuperutils/discord-super-utils",
     download_url="https://github.com/discordsuperutils/discord-super-utils/archive/refs/tags/v0.3.0.tar.gz",
     keywords=[
         "discord",
         "easy",
-        "discord.py",
+        "pycord",
         "music",
         "download",
         "links",
@@ -40,7 +40,7 @@ setup(
         "database manager",
     ],
     install_requires=[
-        "discord.py",
+        "py-cord",
         "Pillow",
         "requests",
         "spotipy",
@@ -70,5 +70,8 @@ setup(
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10"
     ],
 )
