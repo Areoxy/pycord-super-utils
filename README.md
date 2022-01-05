@@ -1,5 +1,5 @@
 <h1 align="center">pycord-super-utils</h1>
-![](https://pypi.org/project/pycordSuperUtils/)
+![pypi version](https://pypi.org/project/pycordSuperUtils/)
 <p align="center">
    A modern python module including many useful features that make discord bot programming extremely easy.
     <br/>
