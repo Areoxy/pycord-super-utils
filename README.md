@@ -1,5 +1,5 @@
 <h1 align="center">pycord-super-utils</h1>
-
+[![Downloads](https://pepy.tech/badge/pycordsuperutils)](https://pepy.tech/project/pycordsuperutils)
 <p align="center">
    A modern python module including many useful features that make discord bot programming extremely easy.
     <br/>
