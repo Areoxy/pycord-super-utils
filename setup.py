@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
     author="koyashie07, adam7100 and Areo",
     url="https://github.com/areoxy/pycord-super-utils",
-    download_url="https://github.com/areoxy/pycord-super-utils/archive/refs/tags/v0.3.0.tar.gz",
+    download_url="https://github.com/areoxy/pycord-super-utils/archive/refs/tags/v0.3.1.tar.gz",
     keywords=[
         "discord",
         "easy",
