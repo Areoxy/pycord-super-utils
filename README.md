@@ -1,9 +1,18 @@
 <h1 align="center">pycord-super-utils</h1>
 
 <p align="center">
+  <a href="https://discord.gg/zhwcpTBBeC"><img src="https://img.shields.io/discord/863388828734586880?logo=discord&color=blue&style=flat-square" /></a>
+  <a href="https://pepy.tech/project/pycordsuperutils"><img src="https://img.shields.io/pypi/dm/pycordSuperUtils?color=green&style=flat-square" /></a>
+  <a href="https://pypi.org/project/pycordSuperUtils/"><img src="https://img.shields.io/pypi/v/pycordSuperUtils?style=flat-square" /></a>
+  <a href=""><img src="https://img.shields.io/pypi/l/pycordSuperUtils?style=flat-square" /></a>
+  <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square">
+    <br/>
+</p>
+
+<p align="center">
    A modern python module including many useful features that make discord bot programming extremely easy.
     <br/>
-   <b>A fork of discordSuperUtils ready for pycord 2.0 and higher</b>
+   <b>A fork of discordSuperUtils ready for py-cord 2.0 and higher</b>
 </p>
 
 Features
@@ -41,16 +50,20 @@ Installation
 Installing pycordSuperUtils is very easy.
 
 ```sh
-python -m pip install pycordSuperUtils
+pip install pycordSuperUtils
+```
+or to install alpha versions
+```sh
+pip install git+https://github.com/areoxy/pycord-super-utils
 ```
 
 Examples
 --------------
 
-For Examples have a look into the "examples" folder of this repo.
+For Examples have a look into the "examples" folder of our github repo.
 
 Support
 --------------
 
-- **[Support Server](https://discord.gg/zhwcpTBBeC)** | discordSuperUtils Support Server
-- **[Documentation](https://discord-super-utils.gitbook.io/discord-super-utils/)** | Not done
+- **[Support Server](https://discord.gg/zhwcpTBBeC)** | Support Server
+- **[Documentation ](https://discord-super-utils.gitbook.io/discord-super-utils/)** | Not done
