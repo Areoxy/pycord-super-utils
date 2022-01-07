@@ -12,7 +12,7 @@
 <p align="center">
    A modern python module including many useful features that make discord bot programming extremely easy.
     <br/>
-   <b>A fork of discordSuperUtils ready for py-cord 2.0 and higher</b>
+   A fork of discordSuperUtils ready for py-cord 2.0 and higher
 </p>
 
 Features
