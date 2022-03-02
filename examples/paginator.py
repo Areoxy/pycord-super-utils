@@ -1,15 +1,16 @@
 import discord
 from discord.ext import commands
 from discord.ext import pages
+from discord import Embed
 
 import pycordSuperUtils
 
-bot = commands.Bot(command_prefix="-")
+client = commands.Bot(command_prefix="-")
 
 embedc = discord.Color(0, 208, 255)
 
 
-@bot.event
+@client.event
 async def on_ready():
     print("Page manager is ready.", bot.user)
 
@@ -17,7 +18,7 @@ async def on_ready():
 
 # The old buttonpaginator was removed from PSU! Here's a example for the official py-cord paginator
     
-@bot.command()
+@client.command()
 async def paginator(ctx):
     await ctx.defer()
     current_time = time.time()
