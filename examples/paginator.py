@@ -21,9 +21,6 @@ async def on_ready():
 @client.command()
 async def paginator(ctx):
     await ctx.defer()
-    current_time = time.time()
-    difference = int(round(current_time - start_time))
-    uptime = str(datetime.timedelta(seconds=difference))
     prefix = "/"
     invite = "https://discord.com/api/oauth2/authorize?client_id=828902907084537867&permissions=8&scope=bot%20applications.commands"
     page1 = Embed(
@@ -35,7 +32,7 @@ async def paginator(ctx):
     page1.set_thumbnail(url=client.user.avatar.url)
     page1.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar.url)
     page1.add_field(name="**🌐Features**", value="> Moderation \n> Information\n> Fun\n> Helpful Setups like applications, join2create and much more!", inline=False)
-    page1.add_field(name="**📊 Stats**", value=f"```py\nGuilds: {len(client.guilds)}\nUsers: {len(client.users)}\nUptime: {uptime}```", inline=False)
+    page1.add_field(name="**📊 Stats**", value=f"```py\nGuilds: {len(client.guilds)}\nUsers: {len(client.users)}\nUptime: 5 minutes```", inline=False)
     page1.add_field(name="**🆘 Help & Links**", value=f"**Support Server**\n> [Join here](https://discord.gg/mQkydPS82f)\n**Developer**\n> Areo | 513786050271772673\n**Invite me**\n> [Invite now!]({invite})", inline=False)
 
     page2 = Embed(
