@@ -50,6 +50,18 @@ class EconomyAccount:
         await self.economy_manager.database.update(
             self.table, {"bank": bank_amount + amount}, self.__checks
         )
+    
+    async def remove_currency(self, amount: int):
+        currency = await self.currency()
+        await self.economy_manager.database.update(
+            self.table, {"currency": currency - amount}, self.__checks
+        )
+
+    async def remove_bank(self, amount: int):
+        bank_amount = await self.bank()
+        await self.economy_manager.database.update(
+            self.table, {"bank": bank_amount - amount}, self.__checks
+        )
 
 
 class EconomyManager(DatabaseChecker):
