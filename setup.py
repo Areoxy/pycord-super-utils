@@ -13,7 +13,7 @@ setup(
         "pycordSuperUtils.music.lavalink": ["*"],
     },
     include_package_data=True,
-    version="0.3.1",
+    version="0.3.2",
     license="MIT",
     description="A fork of discordSuperUtils to easily develop discord Bots with pycord",
     long_description=README,
