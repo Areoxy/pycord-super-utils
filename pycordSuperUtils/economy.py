@@ -81,7 +81,7 @@ class EconomyManager(DatabaseChecker):
 
     @staticmethod
     def generate_checks(member: discord.Member):
-        return {"guild": member.guild.id, "member": member.id}
+        return {"member": member.id}
 
     async def create_account(self, member: discord.Member) -> None:
         self._check_database()
